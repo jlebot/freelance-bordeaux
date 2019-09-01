@@ -1,4 +1,9 @@
 
-#imageTech {
+#maCarteDeVisitePhoto {
+  margin-left: 40px;
+}
 
+#mesBadges {
+  justify-content: space-around;
+  margin-top: 10px;
 }

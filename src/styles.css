@@ -14,8 +14,14 @@ p {
   padding: 10px;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .section {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .fondColore {
