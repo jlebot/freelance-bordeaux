@@ -14,6 +14,10 @@ p {
   padding: 10px;
 }
 
+strong {
+  color: #262959;
+}
+
 img {
   display: block;
   width: 100%;
