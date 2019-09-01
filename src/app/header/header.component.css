@@ -1,8 +1,7 @@
 
 header {
-  background-color: #050B1E;
+  background-color: #41505D;
   color: #E9CF75;
-  opacity: 0.8;
   display: flex;
   justify-content: space-around;
 }
@@ -11,7 +10,6 @@ header {
   width: 5%;
   min-width: 50px;
   max-width: 200px;
-  border-radius: 50%;
 }
 
 nav ul {

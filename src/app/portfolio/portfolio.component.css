@@ -1,9 +1,7 @@
 
 #monPortfolioSection {
-  background-color: #41505D;
   flex-direction: column;
   text-align: center;
-  color: #E9CF75;
 }
 
 img {
