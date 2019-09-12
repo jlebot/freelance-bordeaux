@@ -31,3 +31,11 @@ img {
 .fondColore {
   background-color: #41505D;
 }
+
+.flexInline {
+  display: flex;
+}
+
+.marginAuto {
+  margin:auto;
+}

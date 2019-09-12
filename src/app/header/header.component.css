@@ -1,28 +1,6 @@
 
-header {
-  background-color: #41505D;
-  color: #E9CF75;
-  display: flex;
-  justify-content: space-around;
-}
-
 #monEntetePhoto {
   width: 5%;
   min-width: 50px;
   max-width: 200px;
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-}
-
-nav li {
-  margin-right: 15px;
-}
-
-nav a {
-  font-size: 1.3em;
-  color: #E9CF75;
-  text-decoration: none;
 }
