@@ -39,3 +39,7 @@ img {
 .marginAuto {
   margin:auto;
 }
+
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
