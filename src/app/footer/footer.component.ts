@@ -12,4 +12,8 @@ export class FooterComponent implements OnInit {
     ngOnInit() {
     }
 
+    public onSubscribe() {
+      console.log('Souscription à la newletter');
+    }
+
 }

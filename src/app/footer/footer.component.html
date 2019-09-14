@@ -16,12 +16,12 @@
   </div>
   <div class="text-center">
     <h3>ME TENIR INFORMÉ DES DISPONIBILITÉS</h3>
-    <form method="post" name="subscribe-form" target="_blank" novalidate class="form-inline"
-          action="https://freelance-bordeaux.us3.list-manage.com/subscribe/post?u=1a422ca515929434ecb763bf7&amp;id=1ef952f362">
+    <form action="https://freelance-bordeaux.us3.list-manage.com/subscribe/post?u=1a422ca515929434ecb763bf7&amp;id=1ef952f362"
+          method="post" name="subscribe-form" target="_blank" class="form-inline" target="_blank" novalidate>
       <div class="container text-center">
         <div class="input-group">
-          <input type="email" placeholder="votre@email.com" class="form-control form-control-sm">
-          <button class="btn btn-info btn-sm" type="submit"><span class="fa fa-envelope"></span></button>
+          <input type="email" placeholder="votre@email.com" class="form-control form-control-sm" name="EMAIL" id="mce-EMAIL">
+          <button class="btn btn-info btn-sm" type="submit" (click)="onSubscribe()" name="subscribe"><span class="fa fa-envelope"></span></button>
         </div>
       </div>
     </form>
