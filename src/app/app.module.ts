@@ -9,7 +9,6 @@ import { ProfilComponent } from './profil/profil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BesoinclientComponent } from './besoinclient/besoinclient.component';
 import { MesservicesComponent } from './messervices/messervices.component';
-import { NewsletterComponent } from './newsletter/newsletter.component';
 
 @NgModule({
   declarations: [
@@ -19,8 +18,7 @@ import { NewsletterComponent } from './newsletter/newsletter.component';
     ProfilComponent,
     PortfolioComponent,
     BesoinclientComponent,
-    MesservicesComponent,
-    NewsletterComponent
+    MesservicesComponent
   ],
   imports: [
     BrowserModule,

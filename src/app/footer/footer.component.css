@@ -1,8 +1,32 @@
 
 footer {
-  background-color: #41505D;
-  color: #E9CF75;
   margin-top: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+.wrapper {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.wrapper i {
+  margin-left: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
+
+.fa-twitter-square, .fa-linkedin-square {
+  color: #55ACEE;
+}
+
+.fa-facebook-square, .fa-instagram {
+  color: #3B5998;
 }
