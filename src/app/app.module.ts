@@ -9,6 +9,16 @@ import { ProfilComponent } from './profil/profil.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { BesoinclientComponent } from './besoinclient/besoinclient.component';
 import { MesservicesComponent } from './messervices/messervices.component';
+import { NotimplementedyetComponent } from './notimplementedyet/notimplementedyet.component';
+import { AccueuilComponent } from './accueuil/accueuil.component';
+import {RouterModule, Routes} from '@angular/router';
+
+const appRoutes: Routes = [
+  { path: '', component: AccueuilComponent },
+  { path: 'parcours', component: NotimplementedyetComponent },
+  { path: 'portfolio', component: NotimplementedyetComponent },
+  { path: 'contact', component: NotimplementedyetComponent }
+];
 
 @NgModule({
   declarations: [
@@ -18,11 +28,14 @@ import { MesservicesComponent } from './messervices/messervices.component';
     ProfilComponent,
     PortfolioComponent,
     BesoinclientComponent,
-    MesservicesComponent
+    MesservicesComponent,
+    NotimplementedyetComponent,
+    AccueuilComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
