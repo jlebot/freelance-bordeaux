@@ -1,9 +1,4 @@
 
-#monPortfolioSection {
-  flex-direction: column;
-  text-align: center;
-}
-
 .carousel-indicators li {
   width: 10px;
   height: 10px;
