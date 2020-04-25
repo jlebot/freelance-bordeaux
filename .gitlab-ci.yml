@@ -1,0 +1,16 @@
+stages:
+  - lint
+  - build
+
+
+lint_job:
+  stage: lint
+  script:
+    - ng lint
+  image: trion/ng-cli
+
+build_job:
+  stage: test
+  script:
+    - ng build --prod
+  image: trion/ng-cli
