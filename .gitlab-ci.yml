@@ -10,7 +10,7 @@ lint_job:
   image: trion/ng-cli
 
 build_job:
-  stage: test
+  stage: build
   script:
     - ng build --prod
   image: trion/ng-cli
