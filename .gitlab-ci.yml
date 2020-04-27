@@ -33,4 +33,4 @@ package:
   stage: package
   script:
     - docker build -t jlebot/freelance-bordeaux:latest .
-  image: docker/latest
+  image: docker
