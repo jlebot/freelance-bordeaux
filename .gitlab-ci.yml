@@ -2,6 +2,7 @@ stages:
   - install
   - lint
   - build
+  - package
 
 
 cache:
@@ -27,3 +28,9 @@ build:
     - ng config -g cli.warnings.versionMismatch false
     - ng build --prod
   image: trion/ng-cli
+
+package:
+  stage: package
+  script:
+    - docker build -t jlebot/freelance-bordeaux:latest .
+  image: docker/latest
