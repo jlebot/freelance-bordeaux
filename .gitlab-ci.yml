@@ -2,7 +2,7 @@ stages:
   - install
   - lint
   - build
-  - package
+  - publish
 
 
 cache:
@@ -29,8 +29,10 @@ build:
     - ng build --prod
   image: trion/ng-cli
 
-package:
-  stage: package
+publish:
+  stage: publish
   script:
-    - docker build -t jlebot/freelance-bordeaux:latest .
+    - ng build --prod
+    - docker build -t localhost:5000/freelance-bordeaux:latest .
+    - docker push localhost:5000/freelance-bordeaux:latest
   image: docker
