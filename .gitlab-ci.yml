@@ -3,13 +3,13 @@ stages:
   - build
 
 
-lint_job:
+lint:
   stage: lint
   script:
     - ng lint
   image: trion/ng-cli
 
-build_job:
+build:
   stage: build
   script:
     - ng build --prod
