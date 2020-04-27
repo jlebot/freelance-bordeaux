@@ -7,6 +7,7 @@ stages:
 cache:
   paths:
     - node_modules/
+  key: "$CI_JOB_NAME"
 
 install:
   stage: install
@@ -24,5 +25,6 @@ lint:
 build:
   stage: build
   script:
+    - ng config -g cli.warnings.versionMismatch false
     - ng build --prod
   image: trion/ng-cli
