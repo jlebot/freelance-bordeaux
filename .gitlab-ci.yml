@@ -1,7 +1,19 @@
 stages:
+  - install
   - lint
   - build
 
+
+cache:
+  paths:
+    - node_modules/
+
+install:
+  stage: install
+  script:
+    - rm ./package-lock.json
+    - npm install
+  image: trion/ng-cli
 
 lint:
   stage: lint
