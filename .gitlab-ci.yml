@@ -27,12 +27,15 @@ build:
   script:
     - ng config -g cli.warnings.versionMismatch false
     - ng build --prod
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
   image: trion/ng-cli
 
 publish:
   stage: publish
   script:
-    - ng build --prod
     - docker build -t localhost:5000/freelance-bordeaux:latest .
     - docker push localhost:5000/freelance-bordeaux:latest
   image: docker
