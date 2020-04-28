@@ -27,7 +27,6 @@ build:
   script:
     - ng config -g cli.warnings.versionMismatch false
     - ng build --prod
-    - sed -i 's/$VERSION_NUMBER/0.0.0.0/g' dist/freelance-bordeaux/index.html
   artifacts:
     paths:
       - dist
