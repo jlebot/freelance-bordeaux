@@ -36,6 +36,6 @@ build:
 publish:
   stage: publish
   script:
-    - docker build -t localhost:5000/freelance-bordeaux:latest .
-    - docker push localhost:5000/freelance-bordeaux:latest
+    - docker build -t localhost:5000/freelance-bordeaux:1.0 .
+    - docker push localhost:5000/freelance-bordeaux:1.0
   image: docker
