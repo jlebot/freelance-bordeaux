@@ -2,12 +2,12 @@ stages:
   - install
   - lint
   - build
+  - publish
 
 
 cache:
   paths:
     - node_modules/
-  key: "$CI_JOB_NAME"
 
 install:
   stage: install
@@ -27,4 +27,15 @@ build:
   script:
     - ng config -g cli.warnings.versionMismatch false
     - ng build --prod
+  artifacts:
+    paths:
+      - dist
+    expire_in: 1 week
   image: trion/ng-cli
+
+publish:
+  stage: publish
+  script:
+    - docker build -t localhost:5000/freelance-bordeaux:latest .
+    - docker push localhost:5000/freelance-bordeaux:latest
+  image: docker

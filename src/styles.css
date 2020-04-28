@@ -30,14 +30,6 @@ img {
   align-items: center;
 }
 
-.fondColore {
-  background-color: #41505D;
-}
-
-.flexInline {
-  display: flex;
-}
-
 .marginAuto {
   margin:auto;
 }

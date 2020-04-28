@@ -3,4 +3,14 @@
   width: 10px;
   height: 10px;
   border-radius: 100%;
+  background-color: #262959;
+}
+
+.carousel-caption {
+  color: #262959;
+  font-weight: bold;
+}
+
+.carousel-control {
+  color: #262959;
 }
