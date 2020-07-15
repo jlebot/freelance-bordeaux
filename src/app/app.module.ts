@@ -12,6 +12,7 @@ import { MesservicesComponent } from './messervices/messervices.component';
 import { NotimplementedyetComponent } from './notimplementedyet/notimplementedyet.component';
 import { AccueuilComponent } from './accueuil/accueuil.component';
 import {RouterModule, Routes} from '@angular/router';
+import { RecommandationsComponent } from './recommandations/recommandations.component';
 
 const appRoutes: Routes = [
   { path: '', component: AccueuilComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
     BesoinclientComponent,
     MesservicesComponent,
     NotimplementedyetComponent,
-    AccueuilComponent
+    AccueuilComponent,
+    RecommandationsComponent
   ],
   imports: [
     BrowserModule,
