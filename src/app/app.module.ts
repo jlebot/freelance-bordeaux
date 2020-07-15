@@ -3,23 +3,17 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { ProfilComponent } from './profil/profil.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { BesoinclientComponent } from './besoinclient/besoinclient.component';
-import { MesservicesComponent } from './messervices/messervices.component';
+import { HeaderComponent } from './layout/header/header.component';
+import { FooterComponent } from './layout/footer/footer.component';
+import { ProfilComponent } from './pages/accueuil/profil/profil.component';
+import { PortfolioComponent } from './pages/accueuil/portfolio/portfolio.component';
+import { BesoinclientComponent } from './pages/accueuil/besoinclient/besoinclient.component';
+import { MesservicesComponent } from './pages/accueuil/messervices/messervices.component';
 import { NotimplementedyetComponent } from './notimplementedyet/notimplementedyet.component';
-import { AccueuilComponent } from './accueuil/accueuil.component';
-import {RouterModule, Routes} from '@angular/router';
-import { RecommandationsComponent } from './recommandations/recommandations.component';
-
-const appRoutes: Routes = [
-  { path: '', component: AccueuilComponent },
-  { path: 'parcours', component: NotimplementedyetComponent },
-  { path: 'portfolio', component: NotimplementedyetComponent },
-  { path: 'contact', component: NotimplementedyetComponent }
-];
+import { AccueuilComponent } from './pages/accueuil/accueuil.component';
+import { RecommandationsComponent } from './pages/accueuil/recommandations/recommandations.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,12 +26,13 @@ const appRoutes: Routes = [
     MesservicesComponent,
     NotimplementedyetComponent,
     AccueuilComponent,
-    RecommandationsComponent
+    RecommandationsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes)
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
