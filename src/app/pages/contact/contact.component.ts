@@ -17,9 +17,7 @@ export class ContactComponent implements OnInit {
   }
 
   public onSendMessage(): void {
-    console.log(this.name);
-    console.log(this.email);
-    console.log(this.message);
+
   }
 
 }

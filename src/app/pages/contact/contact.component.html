@@ -1,21 +1,25 @@
-<div class="container">
+<div class="container backgroundPage">
   <h2>Proposez votre projet</h2>
   <form class="mt-4">
     <div class="form-group">
       <label for="nameInput">Identité</label>
-      <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="Nom prénom" [(ngModel)]="name">
+      <input type="text" class="form-control" id="nameInput" name="nameInput" placeholder="Nom prénom" [(ngModel)]="name" disabled>
     </div>
     <div class="form-group">
       <label for="emailInput">Email</label>
-      <input type="email" class="form-control" id="emailInput" name="emailInput" aria-describedby="emailHelp" placeholder="nom.prenom@domaine.com" [(ngModel)]="email">
+      <input type="email" class="form-control" id="emailInput" name="emailInput" disabled
+             aria-describedby="emailHelp" placeholder="nom.prenom@domaine.com" [(ngModel)]="email">
       <small id="emailHelp" class="form-text text-muted">Votre email ne sera pas partagé.</small>
     </div>
     <div class="form-group">
       <label for="messageInput">Description du projet</label>
-      <textarea class="form-control" id="messageInput" name="messageInput" rows="10" [(ngModel)]="message"></textarea>
+      <textarea class="form-control" id="messageInput" name="messageInput" rows="10" [(ngModel)]="message" disabled></textarea>
     </div>
     <div class="d-flex justify-content-end">
-      <button type="submit" class="btn btn-success" (click)="onSendMessage()">Envoyer</button>
+      <button type="submit" class="btn btn-success" (click)="onSendMessage()" disabled>Envoyer</button>
     </div>
   </form>
+</div>
+<div class="container d-flex justify-content-center">
+  <strong>Vous pouvez me contacter @ jerome.lebot@freelance-bordeaux.fr</strong>
 </div>
