@@ -5,15 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
-import { ProfilComponent } from './pages/accueuil/profil/profil.component';
+import { ProfilComponent } from './pages/parcours/profil/profil.component';
 import { PortfolioComponent } from './pages/accueuil/portfolio/portfolio.component';
 import { BesoinclientComponent } from './pages/accueuil/besoinclient/besoinclient.component';
 import { MesservicesComponent } from './pages/accueuil/messervices/messervices.component';
-import { NotimplementedyetComponent } from './notimplementedyet/notimplementedyet.component';
+import { NotimplementedyetComponent } from './layout/notimplementedyet/notimplementedyet.component';
 import { AccueuilComponent } from './pages/accueuil/accueuil.component';
 import { RecommandationsComponent } from './pages/accueuil/recommandations/recommandations.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import {FormsModule} from '@angular/forms';
+import { ParcoursComponent } from './pages/parcours/parcours.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {FormsModule} from '@angular/forms';
     NotimplementedyetComponent,
     AccueuilComponent,
     RecommandationsComponent,
-    ContactComponent
+    ContactComponent,
+    ParcoursComponent
   ],
   imports: [
     BrowserModule,

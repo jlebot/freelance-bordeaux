@@ -1,0 +1,175 @@
+
+.my-timeline {
+  padding-top:50px;
+  overflow:hidden;
+  position:relative
+}
+
+.my-timeline:before {
+  content:"";
+  width:7px;
+  height:100%;
+  background:#262959;
+  margin:0 auto;
+  position:absolute;
+  top:80px;
+  left:0;
+  right:0
+}
+
+.timeline {
+  width:50%;
+  float:left;
+  padding:20px 60px;
+  border-top:7px solid #262959;
+  position:relative;
+}
+
+.timeline-left {
+  border-right:7px solid #262959;
+  border-left:none;
+  border-radius:0 30px 0 0;
+  right:-3.5px;
+  left:auto;
+}
+
+.timeline-right {
+  border-right:none;
+  border-left:7px solid #262959;
+  border-radius:30px 0 0;
+  right:auto;
+  left:-3.5px;
+}
+
+.my-timeline .timeline-right .icon {
+  left:auto;
+  right:0;
+}
+
+.title {
+  font-size:24px;
+  margin:0
+}
+.description {
+  font-size:15px;
+  letter-spacing:1px;
+  margin:0 0 5px
+}
+
+
+.my-timeline .icon {
+  display:block;
+  width:50px;
+  height:50px;
+  line-height:50px;
+  border-radius:50%;
+  background:#DF6154;
+  border:1px solid #fff;
+  text-align:center;
+  font-size:25px;
+  color:#fff;
+  box-shadow:0 0 0 2px #DF6154;
+  position:absolute;
+  top:-30px;
+  left:0
+}
+
+.my-timeline .timeline-content {
+  display:block;
+  padding:30px 10px 10px;
+  border-radius:20px;
+  background:#DF6154;
+  color:#262959;
+  position:relative
+}
+
+.my-timeline .timeline-content:after,.my-timeline .timeline-content:before {
+  content:"";
+  display:block;
+  width:10px;
+  height:50px;
+  border-radius:10px;
+  background:#DF6154;
+  border:1px solid #fff;
+  position:absolute;
+  top:-35px;
+  left:50px
+}
+
+.my-timeline .timeline-content:after {
+  left:auto;
+  right:50px
+}
+
+
+@media only screen and (max-width:767px) {
+  .my-timeline:before {
+    left:0;
+    right:auto
+  }
+  .my-timeline .timeline,.my-timeline .timeline:nth-child(even),.my-timeline .timeline:nth-child(odd) {
+    width:100%;
+    float:none;
+    padding:20px 30px;
+    margin:0 0 30px;
+    border-right:none;
+    border-left:7px solid #262959;
+    border-radius:30px 0 0;
+    right:auto;
+    left:0
+  }
+  .my-timeline .icon {
+    left:auto;
+    right:0
+  }
+}
+
+@media only screen and (max-width:480px) {
+  .my-timeline .title {
+    font-size:18px
+  }
+}
+
+.color-cocktail .timeline-content:after, .color-cocktail .timeline-content:before, .color-cocktail .timeline-content, .color-cocktail .icon {
+  background: #4bd9bf;
+}
+
+.color-cocktail .icon {
+  box-shadow:0 0 0 2px #4bd9bf;
+}
+
+.color-docker .timeline-content:after, .color-docker .timeline-content:before, .color-docker .timeline-content, .color-docker .icon {
+  background: #3ebae7;
+}
+
+.color-docker .icon {
+  box-shadow:0 0 0 2px #3ebae7;
+}
+
+.color-sopra .timeline-content:after, .color-sopra .timeline-content:before, .color-sopra .timeline-content, .color-sopra .icon {
+  background: #ff9e09;
+}
+
+.color-sopra .icon {
+  box-shadow:0 0 0 2px #ff9e09;
+}
+
+.color-test .timeline-content:after, .color-test .timeline-content:before, .color-test .timeline-content, .color-test .icon {
+  background: #C095E2;
+}
+
+.color-test .icon {
+  box-shadow:0 0 0 2px #C095E2;
+}
+
+.color-java .timeline-content:after, .color-java .timeline-content:before, .color-java .timeline-content, .color-java .icon {
+  background: #CDDD83;
+}
+
+.color-java .icon {
+  box-shadow:0 0 0 2px #CDDD83;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
