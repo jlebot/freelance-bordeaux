@@ -37,3 +37,7 @@ img {
 .cursor-zoom-in {
   cursor: zoom-in;
 }
+
+.badge-primary {
+  background-color: #262959;
+}
