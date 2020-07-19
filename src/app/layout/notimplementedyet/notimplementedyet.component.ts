@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-notimplementedyet',
   templateUrl: './notimplementedyet.component.html',
-  styleUrls: ['./notimplementedyet.component.css']
+  styleUrls: ['./notimplementedyet.component.scss']
 })
 export class NotimplementedyetComponent implements OnInit {
 

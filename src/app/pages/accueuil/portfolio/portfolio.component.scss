@@ -1,16 +1,17 @@
+@import 'src/styles.scss';
 
 .carousel-indicators li {
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  background-color: #262959;
+  background-color: $base-color;
 }
 
 .carousel-caption {
-  color: #262959;
+  color: $base-color;
   font-weight: bold;
 }
 
 .carousel-control {
-  color: #262959;
+  color: $base-color;
 }

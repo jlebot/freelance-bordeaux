@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
+$base-color: #262959;
+
 body {
   margin: 0px;
   font-family: "Lucida Sans Unicode", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
@@ -7,7 +9,7 @@ body {
 }
 
 h2 {
-  color: #262959;
+  color: $base-color;
 }
 
 p {
@@ -15,7 +17,7 @@ p {
 }
 
 strong {
-  color: #262959;
+  color: $base-color;
 }
 
 img {
@@ -39,5 +41,5 @@ img {
 }
 
 .badge-primary {
-  background-color: #262959;
+  background-color: $base-color;
 }
